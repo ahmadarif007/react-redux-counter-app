@@ -12,7 +12,7 @@ function Counter({ count, increment, decrement }) {
         <button
           className="btn btn-success"
           type="btn"
-          onClick={() => increment(3)}
+          onClick={() => increment(5)}
         >
           Increment
         </button>
@@ -31,7 +31,7 @@ function Counter({ count, increment, decrement }) {
 
 const mapStateToProps = (state) => {
   return {
-    count: state.value,
+    count: state.counter.value,
   };
 };
 

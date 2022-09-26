@@ -7,7 +7,7 @@ import {
 } from "../redux/hooksCounter/actionCreators";
 
 function HooksCounter() {
-  const count = useSelector((state) => state.value);
+  const count = useSelector((state) => state.hooksCounter.value);
   const dispatch = useDispatch();
 
   const hooksIncrementHandler = (value) => {
@@ -34,7 +34,7 @@ function HooksCounter() {
         <button
           className="btn btn-danger"
           type="btn"
-          onClick={() => hooksDecrementHandler(1)}
+          onClick={() => hooksDecrementHandler(2)}
         >
           Decrement
         </button>
