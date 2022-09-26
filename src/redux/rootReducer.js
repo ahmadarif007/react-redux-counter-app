@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import counterReducer from "./counter/counterReducer";
-import HooksCounterReducer from "./hooksCounter/hooksCounterReducer";
+import hooksCounterReducer from "./hooksCounter/hooksCounterReducer";
+import staticCounterReducer from "./staticCounter/staticCounterReducer";
 
 const rootReducer = combineReducers({
   counter: counterReducer,
-  hooksCounter: HooksCounterReducer,
+  hooksCounter: hooksCounterReducer,
+  staticCounter: staticCounterReducer,
 });
 
 export default rootReducer;

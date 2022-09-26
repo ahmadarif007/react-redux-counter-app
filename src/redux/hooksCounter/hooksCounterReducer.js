@@ -4,7 +4,7 @@ const initialState = {
   value: 0,
 };
 
-const HooksCounterReducer = (state = initialState, action) => {
+const hooksCounterReducer = (state = initialState, action) => {
   switch (action.type) {
     case HINCREMENT:
       return {
@@ -23,4 +23,4 @@ const HooksCounterReducer = (state = initialState, action) => {
   }
 };
 
-export default HooksCounterReducer;
+export default hooksCounterReducer;
