@@ -20,9 +20,9 @@ function HooksCounter() {
 
   return (
     <div className="card text-center mt-5">
-      <div className="card-header">{count}</div>
+      <div className="card-header">Task - 2</div>
       <div className="card-body">
-        <h5 className="card-title">Counter Application</h5>
+        <h5 className="card-title">{count}</h5>
         <p className="card-text">Counter application with redux hooks</p>
         <button
           className="btn btn-success mx-2"

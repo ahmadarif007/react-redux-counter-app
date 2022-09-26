@@ -1,10 +1,10 @@
-import Counter from "./Counter";
+import Counter from "./components/Counter";
 import HooksCounter from "./components/HooksCounter";
 
 function App() {
   return (
     <div className="App container mt-5">
-      {/* <Counter /> */}
+      <Counter />
       <HooksCounter />
     </div>
   );
