@@ -4,7 +4,7 @@ import StaticCounter from "./components/StaticCounter";
 
 function App() {
   return (
-    <div className="App container mt-5">
+    <div className="App row p-4">
       <Counter />
       <HooksCounter />
       <StaticCounter />

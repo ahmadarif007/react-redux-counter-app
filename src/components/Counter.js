@@ -4,8 +4,9 @@ import { decrement, increment } from "../redux/counter/actionCreators";
 
 function Counter({ count, increment, decrement }) {
   return (
+    <div className="col-6">
     <div className="card text-center">
-      <div className="card-header">Task - 1</div>
+      <div className="card-header">Feature - 1</div>
       <div className="card-body">
         <h5 className="card-title">{count}</h5>
         <p className="card-text">Counter application with react redux</p>
@@ -17,7 +18,7 @@ function Counter({ count, increment, decrement }) {
           Increment
         </button>
         <button
-          className="btn btn-danger"
+          className="btn btn-danger mx-2"
           type="btn"
           onClick={() => decrement(1)}
         >
@@ -25,6 +26,7 @@ function Counter({ count, increment, decrement }) {
         </button>
       </div>
       <div className="card-footer text-muted">2 days ago</div>
+    </div>
     </div>
   );
 }
